@@ -1,0 +1,87 @@
+{
+  "开始使用": [
+    {
+      "path": "/",
+      "redirect": "/guide"
+    },
+    {
+      "name": "guide",
+      "path": "/guide",
+      "desc": "介绍"
+    },
+    {
+      "name": "install",
+      "path": "/install",
+      "desc": "安装"
+    },
+    {
+      "name": "start",
+      "path": "/start",
+      "desc": "快速开始"
+    },
+    {
+      "name": "logs",
+      "path": "/logs",
+      "desc": "更新日志"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "基础组件",
+      "path": "/",
+      "items": [
+        {
+          "desc": "Layout 布局",
+          "path": "/layout",
+          "name": "layout"
+        },
+        {
+          "desc": "Icon 图标",
+          "path": "/icon",
+          "name": "icon"
+        },
+        {
+          "desc": "Button 按钮",
+          "path": "/button",
+          "name": "button"
+        },
+        {
+          "desc": "Tag 标签",
+          "path": "/tag",
+          "name": "tag"
+        }
+      ]
+    },
+    {
+      "desc": "视图组件",
+      "path": "/",
+      "items": [
+        {
+          "desc": "Message 信息",
+          "path": "/message",
+          "name": "message"
+        },
+        {
+          "desc": "Breadcrumb 面包屑",
+          "path": "/breadcrumb",
+          "name": "breadcrumb"
+        },
+        {
+          "desc": "Card 卡片",
+          "path": "/card",
+          "name": "card"
+        },
+        {
+          "desc": "Twotable 二维表格",
+          "path": "/twotable",
+          "name": "twotable"
+        },
+        {
+          "desc": "Loading 加载",
+          "path": "/loading",
+          "name": "loading"
+        }
+      ]
+    }
+  ]
+}
