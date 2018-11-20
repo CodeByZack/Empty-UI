@@ -19,5 +19,19 @@
       "path": "/logs",
       "desc": "更新日志"
     }
+  ],
+  "组件": [
+    {
+      "desc": "基础组件",
+      "path": "/",
+      "items": [
+        {
+          "desc": "Button 按钮",
+          "path": "/button",
+          "name": "button"
+        }
+      ]
+    }
+  
   ]
 }

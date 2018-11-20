@@ -6,6 +6,7 @@
       <router-view class="view"/>
     </div>
     <main-footer class="footer"></main-footer>
+    <e-button size="small">小尺寸</e-button>
   </div>
 </template>
 

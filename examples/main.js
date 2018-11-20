@@ -5,10 +5,12 @@ import App from './App'
 import router from './router'
 import demoBlock from './components/demo-block.vue'
 import '../packages/style/index.less'
+import EmptyUI from '../packages/index'
+
 Vue.config.productionTip = false
+Vue.use(EmptyUI)
 
 Vue.component('demo-block', demoBlock)
-
 
 
 

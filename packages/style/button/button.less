@@ -1,2 +1,100 @@
 @import "../base/variables.less";
 
+.e__button{
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #bfcbd9;
+    color: #fff;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+.e__button.is-round{
+    border-radius: 20px;
+}
+.e__button--size-medium {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.e__button--size-small {
+    padding: 9px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+
+.e__button--default{
+    background: #fff;
+    color: #333;    
+    &:hover{
+        color: @color-primary;
+        background: fade(@color-primary,5);
+    }
+}
+
+.e__button--primary{
+    background: @color-primary;   
+    border: 1px solid  @color-primary;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.e__button--info{
+    background: @color-info;    
+    border: 1px solid  @color-info;
+    &:hover{
+        opacity: 0.7;
+    }    
+}
+.e__button--danger{
+    background: @color-error;
+    border: 1px solid  @color-error;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.e__button--warning{
+    background: @color-warning;
+    border: 1px solid  @color-warning;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.e__button--success{
+    background: @color-success;    
+    border: 1px solid  @color-success;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+
+.e__button--default.is-plain{
+    background: transparent;
+    color: #333;    
+}
+.e__button--primary.is-plain{
+    background: @color-primary;    
+}
+.e__button--info.is-plain{
+    background: @color-info;        
+}
+.e__button--danger.is-plain{
+    background: @color-error;
+}
+.e__button--warning.is-plain{
+    background: @color-warning;
+}
+.e__button--success.is-plain{
+    background: @color-success;    
+}
