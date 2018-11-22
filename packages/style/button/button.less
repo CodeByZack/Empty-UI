@@ -1,5 +1,10 @@
 @import "../base/variables.less";
 
+.disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
 .e__button{
     display: inline-block;
     line-height: 1;
@@ -40,6 +45,11 @@
         color: @color-primary;
         background: fade(@color-primary,5);
     }
+    &:disabled{
+        background: #fff;
+        color: #333;    
+        .disabled
+    }
 }
 
 .e__button--primary{
@@ -48,6 +58,9 @@
     &:hover{
         opacity: 0.7;
     }
+    &:disabled{
+        .disabled
+    }
 }
 .e__button--info{
     background: @color-info;    
@@ -55,12 +68,18 @@
     &:hover{
         opacity: 0.7;
     }    
+    &:disabled{
+        .disabled
+    }
 }
 .e__button--danger{
     background: @color-error;
     border: 1px solid  @color-error;
     &:hover{
         opacity: 0.7;
+    }
+    &:disabled{
+        .disabled
     }
 }
 .e__button--warning{
@@ -69,6 +88,9 @@
     &:hover{
         opacity: 0.7;
     }
+    &:disabled{
+        .disabled
+    }
 }
 .e__button--success{
     background: @color-success;    
@@ -76,25 +98,87 @@
     &:hover{
         opacity: 0.7;
     }
+    &:disabled{
+        .disabled
+    }
 }
 
 
 .e__button--default.is-plain{
-    background: transparent;
+    background: #fff;
     color: #333;    
+    &:hover{
+        color: @color-primary;
+        background: fade(@color-primary,5);
+    } 
+    &:disabled{
+        background: #fff;
+        color: #333;  
+        .disabled
+    }
 }
 .e__button--primary.is-plain{
-    background: @color-primary;    
+    background: fade(@color-primary,5);  
+    color: @color-primary;      
+    &:hover{
+        color: #fff;
+        background: @color-primary;
+    }   
+    &:disabled{
+        background: fade(@color-primary,5);  
+        color: @color-primary;  
+        .disabled
+    }
 }
 .e__button--info.is-plain{
-    background: @color-info;        
+    background: fade(@color-info,5); 
+    color: @color-info;        
+    &:hover{
+        color: #fff;
+        background: @color-info;
+    }
+    &:disabled{
+        background: fade(@color-info,5); 
+        color: @color-info;  
+        .disabled
+    }   
 }
 .e__button--danger.is-plain{
-    background: @color-error;
+    background: fade(@color-error,5);  
+    color: @color-error; 
+    &:hover{
+        color: #fff;
+        background: @color-error;
+    }  
+    &:disabled{
+        background: fade(@color-error,5);  
+        color: @color-error; 
+        .disabled
+    } 
 }
 .e__button--warning.is-plain{
-    background: @color-warning;
+    background: fade(@color-warning,5); 
+    color: @color-warning; 
+    &:hover{
+        color: #fff;
+        background: @color-warning;
+    } 
+    &:disabled{
+        background: fade(@color-warning,5); 
+        color: @color-warning; 
+        .disabled
+    }  
 }
 .e__button--success.is-plain{
-    background: @color-success;    
+    background: fade(@color-success,5); 
+    color: @color-success;   
+    &:hover{
+        color: #fff;
+        background: @color-success;
+    }  
+    &:disabled{
+        background: fade(@color-success,5); 
+        color: @color-success; 
+        .disabled
+    }   
 }
