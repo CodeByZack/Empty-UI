@@ -5,7 +5,7 @@
 
 <div class="demo-box">
   <div class="demo-block">
-    <div>
+    <div class="m-10">
       <e-button type="default" >默认按钮</e-button>
       <e-button type="primary">主要按钮</e-button>
       <e-button type="success">成功按钮</e-button>
@@ -13,7 +13,7 @@
       <e-button type="danger">危险按钮</e-button>
       <e-button type="info">信息按钮</e-button>
     </div>
-    <div>
+    <div class="m-10">
       <e-button type="default" plain>朴素按钮</e-button>
       <e-button type="primary" plain>主要按钮</e-button>
       <e-button type="success" plain>成功按钮</e-button>
@@ -21,7 +21,7 @@
       <e-button type="danger" plain>危险按钮</e-button>
       <e-button type="info" plain>信息按钮</e-button>
     </div>
-    <div>
+    <div class="m-10">
       <e-button type="default" round>默认按钮</e-button>
       <e-button type="primary" round>主要按钮</e-button>
       <e-button type="success" round>成功按钮</e-button>
@@ -67,7 +67,7 @@
 
 <div class="demo-box">
   <div class="demo-block">
-    <div>
+    <div class="m-10">
       <e-button disabled>默认按钮</e-button>
       <e-button type="primary" disabled>主要按钮</e-button>
       <e-button type="success" disabled>成功按钮</e-button>
@@ -75,7 +75,7 @@
       <e-button type="warning" disabled>警告按钮</e-button>
       <e-button type="danger" disabled>危险按钮</e-button>
     </div>
-    <div >
+    <div class="m-10" >
       <e-button plain disabled>朴素按钮</e-button>
       <e-button type="primary" plain disabled>主要按钮</e-button>
       <e-button type="success" plain disabled>成功按钮</e-button>
@@ -113,7 +113,7 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 额外的尺寸：```medium```、```small```，通过设置```size```属性来配置它们。
 
 <div class="demo-box">
-  <div class="demo-block">
+  <div class="demo-block" class="m-10">
     <e-button size="small">小尺寸</e-button>
     <e-button size="medium">中等尺寸</e-button>
     <e-button size="default">默认尺寸</e-button>

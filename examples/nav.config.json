@@ -29,6 +29,11 @@
           "desc": "Button 按钮",
           "path": "/button",
           "name": "button"
+        },
+        {
+          "desc": "Layout 布局",
+          "path": "/layout",
+          "name": "layout"
         }
       ]
     }

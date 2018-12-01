@@ -7,7 +7,7 @@
 
 在使用之前，推荐学习 `Vue` 和 `ES2016` ，并正确配置 `Node.js` v6.x 或以上版本
 
-`jk-ui` 基于 `Vue.js` 2.x+ 版本开发，所以有必要了解以下基础知识：
+`empty-ui` 基于 `Vue.js` 2.x+ 版本开发，所以有必要了解以下基础知识：
 - [Vue 组件](https://cn.vuejs.org/v2/guide/components.html)
 - [单文件组件](https://cn.vuejs.org/v2/guide/single-file-components.html)
 
@@ -22,23 +22,22 @@
 
  > vue init webpack
 
- > npm i && npm i jk-ui --save
+ > npm i && npm i empty-ui --save
 ```
 
 ## 标准开发
 
-实际项目中，往往会使用 `webpack`，`rollup` 或者 `gulp` 的工作流，大多可以做到按需加载页面用到的组件，所以不推荐直接使用 `<script>` 标签全局引入的方式使用。
 
 ### 全局组件使用
 
 可以在项目的入口文件中引入所有组件或所需组件
 
 ```js
-import JKUI from 'jk-ui' // 引入组件库
+import EmptyUI from 'empty-ui' // 引入组件库
 
- import 'jk-ui/packages/theme-default/lib/index.css' // 引入样式库
+ import 'empty-ui/packages/style/index.less' // 引入样式库
 
- Vue.use(JKUI)
+ Vue.use(EmptyUI)
 ```
 
 ### 单个组件按需使用
@@ -46,25 +45,25 @@ import JKUI from 'jk-ui' // 引入组件库
 可以局部注册所需的组件，适用于与其他框架组合使用的场景
 
 ```js
-import { JButton } from 'jk-ui'
+import { EButton } from 'empty-ui'
 
-export default {
+ export default {
 
   components: {
 
-    JButton
+    EButton
   }
 }
 ```
 
-在模板中，用 `<j-button></j-button>` 自定义标签的方式使用组件
+在模板中，用 `<e-button></e-button>` 自定义标签的方式使用组件
 
 ```html
 <template>
 
   <div>
 
-    <j-button>这是一个按钮</j-button>
+    <e-button>这是一个按钮</e-button>
 
   </div>
   

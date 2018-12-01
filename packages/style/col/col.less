@@ -1,0 +1,101 @@
+// xs	<768px 响应式栅格数或者栅格属性对象	number/object (例如： {span: 4, offset: 4})	—	—
+// sm	≥768px 响应式栅格数或者栅格属性对象	number/object (例如： {span: 4, offset: 4})	—	—
+// md	≥992 响应式栅格数或者栅格属性对象	number/object (例如： {span: 4, offset: 4})	—	—
+// lg	≥1200 响应式栅格数或者栅格属性对象	number/object (例如： {span: 4, offset: 4})	—	—
+
+@xs:768px;
+@sm:992px;
+@md:1200px;
+// @lg:768px;
+
+
+.e-col{
+    float: left;
+    box-sizing: border-box;
+}
+
+.generate-columns(@n, @i: 1) when (@i <= @n) {
+    .e-col-@{i} {
+        width: (@i * 100% / @n);
+    }
+    .e-col-offset-@{i} {
+        margin-left: (@i * 100% / @n);
+    }
+    .e-col-push-@{i} {
+        position: relative;
+        left: (@i * 100% / @n);
+    }
+    .e-col-pull-@{i} {
+        position: relative;
+        right: (@i * 100% / @n);
+    }
+    .generate-columns(@n, (@i+1));
+}
+.generate-columns(24);
+
+
+
+
+@media screen and (max-width: @md){
+    .generate-columns(24);
+    .generate-columns(@n, @i: 1) when (@i <= @n) {
+        .e-col-md-@{i} {
+            width: (@i * 100% / @n);
+        }
+        .e-col-md-offset-@{i} {
+            margin-left: (@i * 100% / @n);
+        }
+        .e-col-md-push-@{i} {
+            position: relative;
+            left: (@i * 100% / @n);
+        }
+        .e-col-md-pull-@{i} {
+            position: relative;
+            right: (@i * 100% / @n);
+        }
+        .generate-columns(@n, (@i+1));
+    }
+}
+
+@media screen and (max-width: @sm){
+    .generate-columns(24);
+    .generate-columns(@n, @i: 1) when (@i <= @n) {
+        .e-col-sm-@{i} {
+            width: (@i * 100% / @n);
+        }
+        .e-col-sm-offset-@{i} {
+            margin-left: (@i * 100% / @n);
+        }
+        .e-col-sm-push-@{i} {
+            position: relative;
+            left: (@i * 100% / @n);
+        }
+        .e-col-sm-pull-@{i} {
+            position: relative;
+            right: (@i * 100% / @n);
+        }
+        .generate-columns(@n, (@i+1));
+    }
+}
+
+
+@media screen and (max-width: @xs){
+    .generate-columns(24);
+    .generate-columns(@n, @i: 1) when (@i <= @n) {
+        .e-col-xs-@{i} {
+            width: (@i * 100% / @n);
+        }
+        .e-col-xs-offset-@{i} {
+            margin-left: (@i * 100% / @n);
+        }
+        .e-col-xs-push-@{i} {
+            position: relative;
+            left: (@i * 100% / @n);
+        }
+        .e-col-xs-pull-@{i} {
+            position: relative;
+            right: (@i * 100% / @n);
+        }
+        .generate-columns(@n, (@i+1));
+    }
+}

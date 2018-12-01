@@ -26,6 +26,7 @@ export default {
 
 <style>
 @import "./assets/css/md.css";
+@import "./assets/css/common.css";
   .contianer {
     overflow: hidden;
     margin: 48px auto;

@@ -1,6 +1,6 @@
 import EButton from './src/button/index'
-// import JCol from './col/index'
-// import JRow from './row/index'
+import ECol from './src/col/index'
+import ERow from './src/row/index'
 // import JTag from './tag/index'
 // import Message from './message/index'
 // import JBreadcrumb from './breadcrumb/index'
@@ -11,7 +11,7 @@ import EButton from './src/button/index'
 
 
 const components = [
-  EButton
+  EButton,ECol,ERow
 ]
 
 
@@ -24,5 +24,7 @@ const install = function(Vue) {
 
 export default {
   install,
-  EButton
+  EButton,
+  ECol,
+  ERow
 }
