@@ -39,6 +39,11 @@
           "desc": "Icon 图标",
           "path": "/icon",
           "name": "icon"
+        },
+        {
+          "desc": "Tag 标签",
+          "path": "/tag",
+          "name": "tag"
         }
       ]
     }

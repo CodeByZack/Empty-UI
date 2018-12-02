@@ -1,7 +1,7 @@
 import EButton from './src/button/index'
 import ECol from './src/col/index'
 import ERow from './src/row/index'
-// import JTag from './tag/index'
+import ETag from './src/tag/index'
 // import Message from './message/index'
 // import JBreadcrumb from './breadcrumb/index'
 // import JBreadcrumbItem from './breadcrumb-item/index'
@@ -11,7 +11,7 @@ import ERow from './src/row/index'
 
 
 const components = [
-  EButton,ECol,ERow
+  EButton,ECol,ERow,ETag
 ]
 
 
@@ -26,5 +26,6 @@ export default {
   install,
   EButton,
   ECol,
-  ERow
+  ERow,
+  ETag
 }
