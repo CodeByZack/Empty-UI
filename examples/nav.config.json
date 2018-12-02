@@ -34,6 +34,11 @@
           "desc": "Layout 布局",
           "path": "/layout",
           "name": "layout"
+        },
+        {
+          "desc": "Icon 图标",
+          "path": "/icon",
+          "name": "icon"
         }
       ]
     }
