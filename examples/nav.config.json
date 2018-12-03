@@ -46,6 +46,18 @@
           "name": "tag"
         }
       ]
+    },
+    {
+      "desc":"表单组件",
+      "path":"/",
+      "items":[
+        {
+          "desc": "CheckBox 单选框",
+          "path": "/checkbox",
+          "name": "checkbox"
+        }        
+      ]
+
     }
   
   ]
