@@ -6,8 +6,64 @@
     white-space: nowrap;
     user-select: none;
     cursor: pointer;
-    .e__checkbox--checked .e__checkbox__inner {
-        border-color: #79a1eb;
-        background-color: #79a1eb;
+    .e__checkbox--input{
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        outline: none;
+        .e__checkbox--inner{
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #c5d9e8;
+            border-radius: 4px;
+            background-color: #fff;
+            transition: all .2s;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .e__checkbox--inner:after{
+            content: "";
+            width: 4px;
+            height: 8px;
+            border: 2px solid #fff;
+            border-left: 0;
+            border-top: 0;
+            transform: rotate(45deg) scale(0);
+            transition: transform .2s;
+        }
+        .e__checkbox--original{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            outline: none;
+            z-index: -1;
+        }
+    }
+    .e__checkbox--label{
+        font-size: 12px;
+        padding-left: 8px;
+        vertical-align: middle;
+    }
+}
+
+
+.e__checkbox--checked {
+    .e__checkbox--input {
+        .e__checkbox--inner{
+            border-color: #79a1eb;
+            background-color: #79a1eb;
+        }
+        .e__checkbox--inner:after{
+            transform: rotate(45deg) scale(1);
+        }
     }
 }
