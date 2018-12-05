@@ -2,7 +2,8 @@ import EButton from './src/button/index'
 import ECol from './src/col/index'
 import ERow from './src/row/index'
 import ETag from './src/tag/index'
-import ECheckbox from './src/checkbox/checkbox'
+import ECheckbox from './src/checkbox/index'
+import ECheckboxGroup from './src/checkboxgroup/index'
 // import Message from './message/index'
 // import JBreadcrumb from './breadcrumb/index'
 // import JBreadcrumbItem from './breadcrumb-item/index'
@@ -12,7 +13,7 @@ import ECheckbox from './src/checkbox/checkbox'
 
 
 const components = [
-  EButton,ECol,ERow,ETag,ECheckbox
+  EButton,ECol,ERow,ETag,ECheckbox,ECheckboxGroup
 ]
 
 

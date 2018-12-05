@@ -52,7 +52,7 @@
       "path":"/",
       "items":[
         {
-          "desc": "CheckBox 单选框",
+          "desc": "CheckBox 多选框",
           "path": "/checkbox",
           "name": "checkbox"
         }        

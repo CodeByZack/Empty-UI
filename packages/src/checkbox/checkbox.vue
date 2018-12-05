@@ -31,28 +31,47 @@ export default {
             type:Boolean,
             default:false
         },
+        label:{
+            type:String,
+            default:""
+        },
+        value:{}
         
     },
     data(){
         return{
             currentValue:false,
             focus:false,
+            inGroup:false,
+            parent:null
+        }
+    },
+    watch:{
+        value(){
+            this.currentValue = this.value;
         }
     },
     mounted(){
+        if(this.$parent.$options.name == "ECheckboxGroup"){
+            this.parent = this.$parent;
+            this.inGroup = true;
+            return;
+        }
         if(this.checked){
             this.currentValue = this.checked;
         }
     },
     methods:{
         change(e){
-            if (this.disabled) return false
-
+            if (this.disabled) return;
             const checked = e.target.checked
             this.currentValue = checked
-
             const value = checked
-            this.$emit('change', value)            
+            if(this.inGroup){
+                this.parent.change(this);
+            }else{
+                this.$emit('input', value);   
+            }
         }
     }
 }

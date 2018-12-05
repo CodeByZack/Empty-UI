@@ -1,4 +1,4 @@
-import checkbox from './checkbox.js'
+import checkbox from './checkbox.vue'
 
 
 /**
