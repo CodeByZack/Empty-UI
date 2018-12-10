@@ -60,7 +60,12 @@
           "desc": "Radio 单选框",
           "path": "/radio",
           "name": "radio"
-        }        
+        },
+        {
+          "desc": "Input 输入框",
+          "path": "/input",
+          "name": "input"
+        }         
       ]
 
     }
