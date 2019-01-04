@@ -7,6 +7,7 @@ import ECheckboxGroup from './src/checkboxgroup/index'
 import ERadio from './src/radio/index'
 import ERadioGroup from './src/radiogroup/index'
 import EInput from './src/input/index'
+import ETextarea from './src/textarea/index'
 // import Message from './message/index'
 // import JBreadcrumb from './breadcrumb/index'
 // import JBreadcrumbItem from './breadcrumb-item/index'
@@ -16,7 +17,7 @@ import EInput from './src/input/index'
 
 
 const components = [
-  EButton,ECol,ERow,ETag,ECheckbox,ECheckboxGroup,ERadio,ERadioGroup,EInput
+  EButton,ECol,ERow,ETag,ECheckbox,ECheckboxGroup,ERadio,ERadioGroup,EInput,ETextarea
 ]
 
 
@@ -36,5 +37,6 @@ export default {
   ERadio,
   ECheckbox,
   ERadioGroup,
-  EInput
+  EInput,
+  ETextarea
 }

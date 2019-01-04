@@ -65,7 +65,12 @@
           "desc": "Input 输入框",
           "path": "/input",
           "name": "input"
-        }         
+        } ,
+        {
+          "desc": "TextArea 文本域",
+          "path": "/textarea",
+          "name": "textarea"
+        }        
       ]
 
     }

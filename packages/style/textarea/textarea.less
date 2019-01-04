@@ -1,0 +1,28 @@
+.e__textarea{
+    width: 100%;
+    .e__textarea--original{
+        display: block;
+        width: 100%;
+        padding: 6px 8px;
+        color: #3f536e;
+        font-size: 12px;
+        line-height: 1.5;
+        border: 1px solid #c5d9e8;
+        border-radius: 4px;
+        background-color: #fff;
+        transition: border .3s;
+        outline: 0;
+        resize: vertical;
+    }
+    .e__textarea--none{
+        resize: none;
+    }
+}
+.e__textarea--disabled{
+    .e__textarea--original{
+        color: #b1b1b1;
+        border-color: #ececec;
+        background-color: #f7f7f7;
+        cursor: not-allowed;
+    }    
+}
