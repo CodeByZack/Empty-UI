@@ -14,7 +14,7 @@ let componentName = args[0];
 
 const srcIndexTemplate = 
 `
-import ${componentName} from './${componentName}.js'
+import ${componentName} from './${componentName}.vue'
 /**
  * @param {*} Vue
  * 以下为了单独引用时，注册为vue组件
